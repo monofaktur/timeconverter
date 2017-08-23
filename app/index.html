@@ -25,17 +25,19 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <header class="section">
-      <div class="container">
-        <h1 class="title">
-          Time Converter
-        </h1>
-        <p class="subtitle">
-          Just a little tool for when your brain doesn't move the way you want
-        </p>
-        <p>
-          No nick nack, just minutes to decimal.
-        </p>
+    <header class="hero is-primary is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Time Converter
+          </h1>
+          <p class="subtitle">
+            Just a little tool for when your brain doesn't move the way you want
+          </p>
+          <p>
+            No nick nack, just minutes to decimal.
+          </p>
+        </div>
       </div>
     </header>
 
@@ -51,11 +53,13 @@
             Made with ♥ by Maximilian Henrich
           </p>
           <p>
-            <a class="icon" href="https://www.maximilianhenrich.de">
-              <i class="fa fa-home"></i>
+            <a class="" href="https://www.maximilianhenrich.de">
+              <span class="icon"><i class="fa fa-home"></i></span>
+              <span>maximilianhenrich.de</span>
             </a>
-            <a class="icon" href="https://github.com/monofaktur/timeconverter">
-              <i class="fa fa-github"></i>
+            <a class="" href="https://github.com/monofaktur/timeconverter">
+              <span class="icon"><i class="fa fa-github"></i></span>
+              <span>Github</span>
             </a>
           </p>
         </div>
@@ -92,9 +96,13 @@
               <label class="button is-static">Minutes</label>
             </p>
           </div>
-          <div class="field column is-4 is-offset-1 has-addons">
+          <div class="field column is-1 has-text-centered">
+            <span class="icon is-hidden-mobile"><i class="fa fa-arrow-right"></i></span>
+            <span class="icon is-hidden-tablet"><i class="fa fa-arrow-down"></i></span>
+          </div>
+          <div class="field column is-4 has-addons">
             <div class="control is-expanded">
-              <input type="number" v-model="hoursDecimal" class="input" readonly>
+              <input type="number" v-model="hoursDecimal" class="input is-success" readonly>
             </div>
             <p class="control">
               <label class="button is-static">Decimal hours</label>
@@ -116,9 +124,13 @@
               <label class="button is-static">Decimal time</label>
             </p>
           </div>
-          <div class="field column is-4 is-offset-4 has-addons">
+          <div class="field column is-1 is-offset-3 has-text-centered">
+            <span class="icon is-hidden-mobile"><i class="fa fa-arrow-right"></i></span>
+            <span class="icon is-hidden-tablet"><i class="fa fa-arrow-down"></i></span>
+          </div>
+          <div class="field column is-4 has-addons">
             <div class="control is-expanded">
-              <input type="number" v-model="minutes" class="input" readonly>
+              <input type="number" v-model="minutes" class="input is-success" readonly>
             </div>
             <p class="control">
               <label class="button is-static">Minutes</label>
