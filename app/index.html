@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -17,58 +17,79 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
+    <script src="https://use.fontawesome.com/ce2e279c8e.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.css" />
   </head>
   <body>
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills float-right">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-        <h3 class="text-muted">timeconverter</h3>
+    <header class="section">
+      <div class="container">
+        <h1 class="title">
+          Time Converter
+        </h1>
+        <p class="subtitle">
+          Just a little tool for when your brain doesn't move the way you want
+        </p>
+        <p>
+          No nick nack, just minutes to decimal.
+        </p>
       </div>
+    </header>
 
-      <div class="jumbotron">
-        <h1 class="display-3">'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
 
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-          <h4>Sass</h4>
-          <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
+    <section class="section main" id="app">
+      <div class="container ">
+        <p class="label">To decimal</p>
+        <div class="columns">
+          <div class="field column is-3 has-addons">
+            <div class="control is-expanded">
+              <input type="number" v-model="hours" class="input">
+            </div>
+            <p class="control">
+              <label class="button is-static">Hours</label>
+            </p>
+          </div>
+          <div class="field column is-3 has-addons">
+            <div class="control is-expanded">
+              <input type="number" v-model="minutes" class="input">
+            </div>
+            <p class="control">
+              <label class="button is-static">Minutes</label>
+            </p>
+          </div>
+          <div class="field column is-3 is-offset-1 has-addons">
+            <div class="control is-expanded">
+              <input type="number" v-model="hoursDecimal" class="input">
+            </div>
+            <p class="control">
+              <label class="button is-static">Decimal hours</label>
+            </p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>
+            Made with ♥ by Maximilian Henrich
+          </p>
+          <p>
+            <a class="icon" href="https://www.maximilianhenrich.de">
+              <i class="fa fa-home"></i>
+            </a>
+            <a class="icon" href="https://github.com/monofaktur/timeconverter">
+              <i class="fa fa-github"></i>
+            </a>
+          </p>
+        </div>
       </div>
-    </div>
+    </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -82,25 +103,11 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/popper.js/dist/umd/popper.js"></script>
-    <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/vue/dist/vue.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js scripts/plugins.js -->
-    <script src="/bower_components/bootstrap/js/dist/util.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/alert.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/button.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/modal.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/tab.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
-    <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
