@@ -1,7 +1,7 @@
 /*jshint esversion: 6 */
 
 new Vue ({
-  el: "#app",
+  el: '#app',
   data: {
     minutes: 30,
     hours: 0
