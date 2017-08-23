@@ -1,10 +1,12 @@
 /*jshint esversion: 6 */
 
-new Vue ({
-  el: '#app',
-  data: {
-    minutes: 30,
-    hours: 0
+var ToDecimal = Vue.extend({
+  template: '#template-todecimal',
+  data: function () {
+    return {
+      minutes: 30,
+      hours: 0
+    };
   },
   computed: {
     hoursDecimal() {
@@ -15,5 +17,26 @@ new Vue ({
       return Math.round( decimale * 100) / 100;
     }
   }
+});
 
+var ToMinutes = Vue.extend({
+  template: '#template-tominutes',
+  data: function () {
+    return {
+      hoursDecimal: 0.5
+    };
+  },
+  computed: {
+    minutes() {
+      return Math.round(this.hoursDecimal * 60);
+    }
+  }
+});
+
+new Vue ({
+  el: '#app',
+  components: {
+    todecimal: ToDecimal,
+    tominutes: ToMinutes
+  }
 });

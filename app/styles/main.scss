@@ -16,7 +16,9 @@ body {
 .main {
   flex: 1;
 }
-
+.main .container {
+  margin-bottom: 3em;
+}
 
 /* Customize container */
 @media (min-width: 48em) {
