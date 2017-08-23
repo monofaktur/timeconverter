@@ -1,1 +1,1 @@
-"use strict";
+"use strict";new Vue({el:"#app",data:{minutes:30,hours:0},computed:{hoursDecimal:function(){var t=parseFloat(this.minutes)||0,e=60*parseFloat(this.hours)||0,s=t+e,u=s/60;return Math.round(100*u)/100}}});
